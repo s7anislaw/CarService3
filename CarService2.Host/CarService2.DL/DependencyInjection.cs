@@ -23,11 +23,7 @@ namespace CarService3.DL
                     nameof(MongoDbConfiguration)));
 
             // Register DL services here
-<<<<<<< Updated upstream
-            services.AddSingleton<ICustomerRepository, CustomerStaticRepository>();
-=======
             services.AddSingleton<ICustomerRepository, CustomerRepository>();
->>>>>>> Stashed changes
             //services.AddSingleton<ICarRepository, CarStaticRepository>();
             return services;
         }
